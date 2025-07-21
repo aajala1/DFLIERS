@@ -46,7 +46,7 @@ def load_model_safe():
 def load_airports_data_safe():
     """Safely load airports data"""
     try:
-        airports_df = pd.read_csv("airports.csv")
+        airports_df = pd.read_csv("data/airports.csv")
         if airports_df.empty:
             print("Airports data file is empty. Please check the file content.")
             return None
